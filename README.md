@@ -9,7 +9,7 @@ more configuration on jenkins need
 - hosts: all
   become: true
   tasks:
-    - name: copy war file to tomcat server
+  - name: copy war file to tomcat server
       copy:
         src: /home/ansible/project-2-ssh-tomcat-webapp.war  # file name should be same as artifactId & finalname
         dest: /root/apache-tomcat-9.0.76/webapps #tomcat version check
